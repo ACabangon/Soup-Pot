@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotpot Browser Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+    <header>
+        <h1>Hotpot Browser Edition</h1>
+    </header>
+
+    <main>
+
+        <section class="opponents">
+
+<div id="bot1" class="bot-player">
+    <section class="player-area">
+    <h3>Bot 1 (<span>0</span>)</h3>
+    <div class="bot-cards"></div>
+    </section>
+</div>
+
+<div id="bot2" class="bot-player">
+    <section class="player-area">
+    <h3>Bot 2 (<span>0</span>)</h3>
+    <div class="bot-cards"></div>
+    </section>
+</div>
+
+<div id="bot3" class="bot-player">
+    <section class="player-area">
+    <h3>Bot 3 (<span>0</span>)</h3>
+    <div class="bot-cards"></div>
+    </section>
+</div>
+
+        </section>
+
+        <section class="center-area">
+
+            <div class="deck-area">
+                <button id="draw-deck-btn">
+                    Draw From Deck
+                </button>
+                <br>
+                <span id="deck-count", style="color: transparent;">Deck: 64</span>
+                <br>
+                <span id="turn-indicator">Your Turn</span>
+            </div>
+            
+<div class="game-info-panel">
+
+    <div class="discard-area">
+
+        <h3>Discard Pile</h3>
+
+        <div id="discard-card">
+            Empty
+        </div>
+
+        <button id="take-discard-btn">
+            Take Discard
+        </button>
+
+    </div>
+
+    <div class="log-area">
+
+        <h3>Game Log</h3>
+
+        <div id="game-log">
+
+        </div>
+
+    </div>
+
+</div>
+
+        </section>
+
+        <section class="player-area">
+
+            <h2>Your Hand</h2>
+
+            <div id="player-hand">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <button id="new-game-btn">
+            New Game
+        </button>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
